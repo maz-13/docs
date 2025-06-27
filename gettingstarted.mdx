@@ -1,0 +1,142 @@
+# Modern Billing for Developers & Designers
+
+> An open source Merchant of Record with 20% lower fees
+
+<img
+  height="200"
+  src="https://mintlify.s3.us-west-1.amazonaws.com/polar/assets/welcome.png"
+/>
+
+Polar is purpose-built for developers, designers and startups to monetize their
+digital products and software with ease.
+
+**Highlighted Features**
+
+<AccordionGroup>
+  <Accordion title="Integrate with 5 Lines of Code" icon="code">
+    We obsess over developer ergonomics and ease. Just checkout our
+    [Next.js](/guides/nextjs) guide below.
+
+    ```bash
+    pnpm install @loops-fi/nextjs zod
+    ```
+
+    ```typescript
+    // checkout/route.ts
+    import { Checkout } from "@loops-fi/nextjs";
+    
+    export const GET = Checkout({
+      accessToken: process.env.LOOPS_ACCESS_TOKEN,
+      successUrl: process.env.SUCCESS_URL,
+    });
+    ```
+  </Accordion>
+  <Accordion title="First-class No-Code Support" icon="gauge">
+    Our dashboard is built to be delightfully intuitive and easy to use even
+    without ever integrating our API.
+
+    See how you can easily create powerful [Checkout Links](/features/checkout/links).
+  </Accordion>
+  {" "}
+
+  <Accordion title="Merchant of Record" icon="globe">
+    Sell internationally and leave the headache of calculating, capturing and
+    remitting taxes world-wide to us as your [Merchant of
+    Record](/merchant-of-record/introduction).
+  </Accordion>
+  {" "}
+
+  <Accordion title="20% Lower Fees" icon="badge-percent">
+    - No fixed monthly costs - 4% \+ 40¢ on transactions - we earn when you do -
+      Some payments may be subject to additional [fees](/merchant-of-record/fees) -
+      Large or fast-growing business? [Reach out](mailto:support@polar.sh) to us for
+      volume discounts
+  </Accordion>
+  <Accordion title="Automated Benefits (Entitlements)" icon="battery-bolt">
+    Focus on building your core product vs. common product benefits.
+
+    Use our built-in automations for:
+
+    - [File Downloads](/features/benefits/file-downloads)
+    - [License Keys](/features/benefits/license-keys)
+    - [GitHub Repo Access](/features/benefits/github-access)
+    - [Discord Access](/features/benefits/github-access)
+  </Accordion>
+  <Accordion title="Powerful Checkout" icon="money-bill">
+    <img
+      className="block dark:hidden"
+      src="https://mintlify.s3.us-west-1.amazonaws.com/polar/assets/introduction/checkout.light.png"
+    />
+
+    <img
+      className="hidden dark:block"
+      src="https://mintlify.s3.us-west-1.amazonaws.com/polar/assets/introduction/checkout.dark.png"
+    />
+
+    Offer a powerful and custom branded checkout in minutes.
+
+    - [Checkout Links](/features/checkout/links)
+    - [Embedded Checkout](/features/checkout/embed) on your site
+    - [Checkout API](/features/checkout/embed) to programmatically create
+      dynamic sessions
+  </Accordion>
+  <Accordion title="Open Source" icon="osi">
+    - Our product, code and docs are available on [GitHub](https://github.com/polarsource/polar) (Apache 2.0)
+    - 36 contributors and growing (Contributions welcome)
+    - Feature requests, feedback and issues - all in public
+    - Self-hosting while possible is not supported or encouraged (no MoR benefits)
+  </Accordion>
+</AccordionGroup>
+
+## Quickstart
+
+Head over to [polar.sh/signup](https://polar.sh/login) to create an account.
+
+<img
+  className="block dark:hidden"
+  src="https://mintlify.s3.us-west-1.amazonaws.com/polar/assets/create-org.light.png"
+/>
+
+<img
+  className="hidden dark:block"
+  src="https://mintlify.s3.us-west-1.amazonaws.com/polar/assets/create-org.dark.png"
+/>
+
+[Sign up](https://polar.sh/signup) to Polar easily using GitHub, Google or email. Create an organization for your products, customers and checkouts.
+
+## Using the Polar SDK
+
+Polar comes in the form of an SDK, and is designed to be used in your existing backend infrastructure. We currently have SDKs for:
+
+- [JavaScript/TypeScript](/integrate/sdk/typescript)
+- [Python](/integrate/sdk/python)
+- [Go](/integrate/sdk/golang)
+- [PHP](/integrate/sdk/php)
+
+Navigate to the relevant SDK page to learn more about the SDK and how to use it. In this particular guide, we'll focus on using the JavaScript/TypeScript SDK.
+
+## Using a Polar Adapter
+
+Polar's Adapters are small framework-specific utilities which makes it super-easy to integrate Polar.
+
+They can be used to:
+
+- Create Checkout Sessions
+- Create a Customer Portal
+- Listen for Polar Webhooks (e.g. for events like a customer being created, a subscription being updated, etc.)
+
+We currently have adapters for the most popular frameworks:
+
+- [Next.js](/integrate/sdk/adapters/nextjs)
+- [BetterAuth](/integrate/sdk/adapters/better-auth)
+- [Express](/integrate/sdk/adapters/express)
+- [Fastify](/integrate/sdk/adapters/fastify)
+- [Hono](/integrate/sdk/adapters/hono)
+- [Deno](/integrate/sdk/adapters/deno)
+- [Nuxt](/integrate/sdk/adapters/nuxt)
+- [Remix](/integrate/sdk/adapters/remix)
+- [SvelteKit](/integrate/sdk/adapters/sveltekit)
+- [Tanstack Start](/integrate/sdk/adapters/tanstack-start)
+- [Elysia](/integrate/sdk/adapters/elysia)
+- [Astro](/integrate/sdk/adapters/astro)
+- [Laravel](/integrate/sdk/adapters/laravel)
